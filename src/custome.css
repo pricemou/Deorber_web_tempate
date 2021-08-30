@@ -1,0 +1,939 @@
+
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+/*---------------------------------------------------------------- */
+/*--------------------------- navBart ------------------------- */
+/*---------------------------------------------------------------- */
+
+
+.navBart{
+  background-color: #242736;
+}
+
+.navBart a{
+  color: white;
+}
+.labeText{
+  color: #a5a3a3;
+  font-size: 17px;
+  padding: 9px;
+}
+
+.contactForm label{
+  color: #000000;
+}
+.demandeVideo{
+  text-align: center;
+  height: 79px;
+  color: white;
+}
+.demandeVideo div{
+  width: 498px;
+  background: #242736;
+  padding: 0px;
+}
+
+.demanderMaintnant {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.demanderMaintnant li {
+  display: inline-block;
+  min-width: 5em;
+  margin: 0 0.5em;
+}
+.demanderMaintnant a {
+  text-decoration: none;
+  display: block;
+  font-family:Arial;
+  font-size: 18px;
+  position: relativce;
+  color: white;
+  padding:.5em 0
+}
+
+@media (max-width: 425px) {
+  .demandeVideo {
+    text-align: center;
+    height: 42px;
+    color: white;
+  }
+  .demandeVideo div{
+    width: 297px;
+    background: #242736;
+    padding: 0px;
+    font-size: 13px;
+  }
+  .demanderMaintnant a{
+    text-decoration: none;
+    display: block;
+    font-family: Arial;
+    font-size: 10px;
+    position: relativce;
+    color: white;
+    padding: .5em 0; 
+    }
+  }
+  
+@media (max-width :425px){
+  .slider-taille{
+    height: 236px;
+  }
+}
+
+.slider-taille{
+  height: 450px;
+}
+
+
+/* Styles for wrapping the search box */
+
+.main {
+  width: 50%;
+  margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+.form-control{
+  border: 1px solid #b4becb;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+.links li a i{
+   font-size: 20px;
+   margin-top: 7px;
+}
+.logoimage{
+  width: 120px;
+}
+/*---------------------------------------------------------------- */
+/*--------------------------- navbar ------------------------- */
+/*---------------------------------------------------------------- */
+
+
+header{
+  /* background-color: #252525; */
+  padding: 8px 16px;
+  box-shadow: 1px 0px 7px 3px #ede9e9;
+}
+header div.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.navbar div.logo{
+  color: #f5f5f5;
+  font-family: "Quicksand", sans-serif;
+}
+div.logo h2{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+div.nav-links ul.links{
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+}
+ul.links li{
+  margin: 0px 8px;
+}
+ul.links li:last-child{
+  margin-right: 0;
+}
+ul.links li a{
+  color: black;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+}
+ul.links li a:hover,
+ul.links li a:focus{
+  color: #69a9f2;
+}
+
+div.menu-trigger{
+  display: none;
+}
+button.close-nav{
+  display: none;
+}
+div.menu-trigger button{
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+div.menu-trigger button:focus,
+div.menu-trigger button:hover{
+  color: #000000;
+}
+div.content{
+  margin-top: 150px;
+  text-align: center;
+}
+div.content p{
+  font-family: "Roboto", sans-serif;
+  color: #464686;
+  font-size: 1.3rem;
+}
+div.content a{
+  margin-top: 30px;
+  display: block;
+  color: grey;
+  font-family: "Roboto", sans-serif;
+  transition: all .3s ease-out;
+}
+div.content a:hover{
+  color: red;
+}
+@media screen and (min-width: 1000px){
+  header{
+    /* margin: 0px 10%; */
+  }
+}
+@media screen and (max-width: 600px){
+  /* html,body{
+    width: 100%;
+    height: 100%;
+  } */
+  /* body{
+    background-color: #f3f26f;
+  } */
+  div.nav-links{
+    display: none;
+    /* background-color: #000; */
+    position: fixed;
+    min-width: 200px;
+    height: 100%;
+    top: 0;
+    padding: 0;
+    right: 0;
+    z-index: 1;
+    animation: appear 0.7s ease-in-out;
+  }
+  @keyframes appear{
+    0%{
+        right: -300px;
+    }
+    100%{
+      right: 0px;
+    }
+  }
+  div.nav-links ul.links{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  ul.links li{
+    margin: 0;
+  }
+  ul.links li a{
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+  }
+  ul.links li a:hover,
+  ul.links li a:focus{
+    background: #efefef;
+    color:#595907;
+  }
+  button.close-nav{
+    display: block;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 8px;
+    left: 168px;
+    cursor: pointer;
+  }
+  button.close-nav:focus{
+    color: red;
+  }
+  div.menu-trigger{
+    display: block;
+  }
+}
+/*---------------------------------------------------------------- */
+/*--------------------------- se connecter ------------------------- */
+/*---------------------------------------------------------------- */
+
+
+
+.slider-container .slider-content .slider-single .slider-single-image {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 10px 40p;
+  transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+  transform: scale(0);
+  opacity: 0;
+}
+
+#hero_register .seConnecter {
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  font-size: 31px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+.seConnecter-text{
+  text-align: center;
+  color: #a5a3a3;
+}
+
+
+.btn-actions-fecebook {
+  display: inline-block;
+  height: 42px;
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  text-decoration: none !important;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #5b6bfb;
+  color: #FFFFFF;
+  border: 1px solid #5b6bfb;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.connecter {
+  color: #a5a3a3;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 4%;
+}
+.connecter strong{
+  color: #000000;
+}
+
+.btn-actions-apple {
+  display: inline-block;
+  height: 42px;
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  text-decoration: none !important;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn-valide {
+  display: inline-block;
+  height: 42px;
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  /* text-transform: uppercase; */
+  text-decoration: none !important;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #242736;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#contactForm{
+  margin-top: 30px;
+}
+
+.appleIcon {
+  font-size: 17px;
+  margin-right: 9%;
+}
+.logoDeobers{
+  width: 114%;
+  font-size: 29px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+
+.logoDeober{
+  width: 372px;
+  font-size: 29px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+
+.copy{
+  color: #FFFFFF;
+}
+.foote-email{
+  text-decoration: none;
+  width: 173px;
+  color: #FFFFFF;
+  background: #242736;
+  height: 32px;
+  border:none;
+}
+
+.white{
+  width: 41px;
+  padding: 3px;
+  background: #3faba0;
+  font-size: 34px;
+  color: #fff;
+  margin-top: 0px;
+}
+.footer-text{
+  text-align: center;
+  font-size: 10px;
+}
+
+.talent{
+  margin: 0px;
+  /* width: 24px; */
+  text-align: end;
+  padding: 9px;
+  border: 1px solid #3faba0;
+  border-radius: 8px;
+  height: 41px;
+}
+.newsletter{
+  font-size: 20px;
+  color: #fff;
+}
+
+.loading{
+  height: 179px;
+}
+
+.deoberPosition{
+  padding: 2px;
+  margin: auto;
+  margin-top: 40%;
+}
+
+/*---------------------------------------------------------------- */
+/*--------------------------- Acceuil ------------------------- */
+/*---------------------------------------------------------------- */
+
+#accueil_register{
+  background: url(../src/scenes/img/icon.png)  no-repeat;
+  color: #fff;
+  background-size: 44.2em;
+}
+
+.body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center ;
+  /* min-height: 100vh; */
+
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.taille{
+    width: 100%;
+  height: 362px;
+}
+
+@media (max-width: 320px) {
+  .logoDeober {
+      width: 222px;
+      margin-top: 13%;
+  }
+}
+@media (max-width: 375px) {
+  .logoDeober {
+      width: 287px;
+      margin-top: 8%;
+  }
+}
+@media (max-width: 425px) {
+  .logoDeober {
+      width: 287px;
+      margin-top: 8%;
+  }
+}
+
+.nav{
+  background:#242736;
+  min-height:59px;
+  overflow:auto; 
+}
+.nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    margin: auto;
+}
+.nav li{
+  float:left;
+}
+
+.nav-mobile a{
+  display:block;
+  padding:17px 25px;
+  line-height:16px;
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
+ 
+   
+}
+.nav-mobile a:hover{
+  background:#3faba0;
+}
+.toggle-nav{
+  display:none;
+}
+
+.titrecategorie{
+  padding: 12px;
+  font-size: 23px;
+  color: #3faba0;
+  font-weight: 600;
+}
+.voirPlus{
+ text-align: right;
+}
+.nav_container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #242736;
+}
+
+.navs {
+  background: #242736;
+  min-height: 53px;
+  overflow: auto;
+}
+.navs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: auto;
+}
+.navs li {
+  float: left;
+}
+
+.navs-mobile{
+  margin-left: 8%;
+}
+
+.navs-mobile a {
+  display: block;
+  padding: 9px 6px;
+  line-height: 27px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+div .navs-mobile ul li i {
+  font-size: 28px;
+}
+
+/*---------------------------------------------------------------- */
+/*--------------------------- Acceuil ------------------------- */
+/*---------------------------------------------------------------- */
+
+.tandance h1{
+  padding: 14px;
+  text-align: center;
+  font-size: 33px;
+  font-weight: 600;
+  color: #3faba0;
+}
+
+.tandance ul {
+  text-align: right;
+  margin-top: 13px;
+  padding: 5px;
+}
+
+.tandance ul li{
+  display: inline;
+  padding: 10px;
+  font-size: 11px;
+  height: 111%
+}
+
+.tandance ul li i{
+  font-size: 15px;
+  color: white;
+}
+.filtre-cacher{
+  background-color:black ;
+  color: white;
+}
+
+.filtre-effacer{
+  background: #b8b9be;
+  color: black;
+}
+.section-tadance {
+  padding: 26px;
+  background: #dddd;
+  margin: 3px
+}
+.tandance hr
+{
+  margin: 15px 0 13px 0;
+  border-color: #baa9a9;
+}
+.section-tadance h2{
+  font-size: 18px;
+  color: #595656;
+}
+.Checkbox{
+  margin-left: 18px;
+}
+
+.Checkbox i{
+  color: #3faba0;
+  font-size: 17px;
+  padding: 3px;
+}
+
+.paginalisation ul{
+  text-align: center;
+  display: inline-flex;
+  margin: revert;
+}
+.paginalisation ul li i{
+  font-size: 32px;
+  padding: 1px;
+}
+.paginalisation{
+  margin-left: auto;
+  margin-right: auto;
+  width: 11em;
+}
+.paginalisation .page{
+  padding: 8px;
+  width: 101px;
+}
+.tt{
+  margin-top: 36px;
+}
+
+/*---------------------------------------------------------------- */
+/*--------------------------- Créateur ------------------------- */
+/*---------------------------------------------------------------- */
+
+.tt .nom h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.tt .nom h3{
+  font-size: 12px;
+  color: #74747669;
+}
+.tt .nom a{ 
+  font-size: 11px;
+  color: #242736;
+  line-height: 3em;
+}
+.tt .nom a i{
+  letter-spacing: 8px;
+  font-size: 14px;
+  color: #3faba0;
+}
+
+.tt .nom p{
+  font-size: 9px;
+  color: #3faba0;
+}
+.video-rotation a{
+  margin-left: 33px;
+}
+.rotations{
+  font-size: 52px;
+  color: #4aafa2;
+  display: -webkit-inline-box;
+  -webkit-transform: rotate(337deg);
+}
+.video-rotation h1{
+  font-size: 21px;
+  color: #4aafa2;
+}
+.video-rotation div{
+  background: #242736;
+  width: 203px;
+  height: 31px;
+}
+
+.video-rotation div ul li{
+  font-size: 8px;
+  color: white;
+  margin: 1px;
+  padding: 10px
+}
+
+.video-rotation div ul {
+  display: flex;
+}
+.video-rotation div ul li i{
+  font-size: 18px;
+  margin-top: -4px;
+  color: #f5f8fa;
+}
+
+.ttt-fond{
+  background: url(../src/scenes/img/icon.png) no-repeat center bottom;
+  background-position: left;
+  background-size: 26rem;
+}
+.tdr{
+  background: #242736;
+  color: white;
+  height: 75px;
+}
+.tdr h1{
+  font-size: 17px;
+  color: white;
+}
+.tdr ul{
+  display: inline-flex;
+}
+.tdr ul i{
+  width: 26px;
+  color: #4aafa2;
+  font-size: 20px;
+}
+.tdr div{
+  margin-top: 14px;
+}
+
+.tt .profile{
+  margin: 40px;
+  margin-top: 98px;
+  padding: 21px;
+  height: 243px;
+  z-index: 1;
+  margin-left: 68px;
+  border-radius: 126px;
+}
+
+.cardePosition{
+  margin-top: 118px;
+}
+
+.avis{
+  margin-left: 10%;
+  padding: 12px;
+  width: 84%;
+}
+
+.avis .container .commantaire{
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+
+.avis .container div div p{
+  font-size: 11px;
+}
+.paragrapheCommantaire .Commente{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.paragrapheCommantaire{
+  background: #dfdfdf;
+  padding: 9px;
+  border-radius: 21px;
+}
+
+.top_commantaire{
+  margin-top: 12px;
+}
+.similairesCategorie{
+  background: #242736;
+}
+
+.Commente_left{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px;
+  margin: 5px;
+}
+
+.commenter_icon{
+  color: #242736;
+  font-size: 34px;
+  text-align: center;
+}
+
+.Commente_rigth{
+  font-weight: bold;
+  font-size: 14px;
+  padding: 13px;
+}
+
+.top_commantaires{
+  padding: 12px;
+  width: 71%;
+}
+.commantaires{
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 14px;
+}
+
+@media (max-width: 768px) {
+  .tt .profile {
+      border-radius: 126px;
+      margin: 0;
+      margin-top: 0;
+      padding: 0;
+      z-index: 1;
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .navs-mobile a {
+      display: block;
+      padding: 11px 6px;
+      line-height: 26px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 10px;
+  }
+  .video-rotation div {
+      background: #242736;
+      width: 92px;
+      height: 31px;
+  }
+  .video-rotation div ul li {
+      font-size: 6px;
+      color: white;
+      margin: 1px;
+      padding: 7px;
+  }
+  .tdr div {
+      margin-top: 21px;
+      margin-left: 8px;
+  }
+  .ttt-fond {
+      /* background: url(../src/scenes/img/icon.png) no-repeat center bottom; */
+      background-position: bottom;
+      background-size: 7rem;
+  }
+  .tt .profile {
+      display: none;
+  }
+  .tt {
+      margin-top: -90px;
+  }
+  .hero_home_tendance.version_3 {
+      background: #3f4079 url(../src/scenes/img/99.png) no-repeat center bottom;
+      height: 147px;
+  }
+  .rotations {
+      font-size: 35px;
+      color: #4aafa2;
+      display: -webkit-inline-box;
+      -webkit-transform: rotate(337deg);
+  }
+  .tdr ul i {
+      width: 26px;
+      color: #4aafa2;
+      font-size: 16px;
+  }
+  .tdr h1 {
+      font-size: 9px;
+      color: white;
+  }
+  .video-rotation h1 {
+      font-size: 88%;
+      color: #4aafa2;
+  }
+  .mb-4, .my-4 {
+      margin-bottom: -0.5rem !important;
+  }
+}
+
+@media (max-width: 325px) {
+ .ttr{
+      font-size: 9px;
+ } 
+ .ttri{
+  font-size: 30px;
+  margin-left: -4px;
+ }
+}
