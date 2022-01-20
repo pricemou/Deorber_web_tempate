@@ -1,0 +1,328 @@
+
+.hero_home_tendance {
+    height: 355px;
+    width: 100%;
+    display: table;
+  }
+    
+  .hero_home_tendance.version_3 {
+    /* background: #3f4079 url(../img/99.png) no-repeat center bottom; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   
+  }
+  
+  .hero_home_tendance .content h3 {
+    margin: 0 0 0 0;
+    font-size: 60px;
+    font-size: 3.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  @media (max-width: 767px) {
+    
+    .hero_home_tendance .content h3 {
+      /* For less than 767px */
+      font-size: 42px;
+      font-size: 2.625rem;
+    }
+  }
+  @media (max-width: 575px) {
+    
+    .hero_home_tendance .content h3 {
+      /* For less than 575px */
+      font-size: 32px;
+      font-size: 2rem;
+    }
+  }
+  
+  /* Animations hero */
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  
+  .hero_home_tendance .content h3.animated, #hero_video .content h3.animated {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+  }
+
+div .navs-mobile ul li i {
+    font-size: 28px;
+}
+  
+
+
+/*---------------------------------------------------------------- */
+/*--------------------------- Créateur ------------------------- */
+/*---------------------------------------------------------------- */
+.tt{
+    margin-top: 36px;
+}
+
+.tt .nom h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.tt .nom h3{
+    font-size: 12px;
+    color: #74747669;
+}
+.tt .nom a{ 
+    font-size: 11px;
+    color: #242736;
+    line-height: 3em;
+}
+.tt .nom a i{
+    letter-spacing: 8px;
+    font-size: 14px;
+    color: #3faba0;
+}
+
+.tt .nom p{
+    /* font-size: 9px; */
+    /* color: #3faba0; */
+}
+.video-rotation a{
+    margin-left: 33px;
+}
+.rotations{
+    font-size: 52px;
+    color: #4aafa2;
+    display: -webkit-inline-box;
+    -webkit-transform: rotate(337deg);
+}
+.video-rotation h1{
+    font-size: 21px;
+    color: #4aafa2;
+}
+.video-rotation div{
+    background: #242736;
+    width: 203px;
+    height: 31px;
+}
+
+.video-rotation div ul li{
+    font-size: 8px;
+    color: white;
+    margin: 1px;
+    padding: 10px
+}
+
+.video-rotation div ul {
+    display: flex;
+    list-style: none;
+    margin: 0 0 25px 0;
+    padding: 0;
+
+}
+.video-rotation div ul li i{
+    font-size: 18px;
+    margin-top: -4px;
+    color: #f5f8fa;
+}
+
+.tdr{
+    background: #242736;
+    color: white;
+    height: 75px;
+}
+.tdr h1{
+    font-size: 17px;
+    color: white;
+}
+.tdr ul{
+    display: inline-flex;
+    list-style: none;
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+.tdr ul i{
+    width: 26px;
+    color: #4aafa2;
+    font-size: 20px;
+}
+.tdr div{
+    margin-top: 14px;
+}
+
+.tt .profile{
+    margin: 40px;
+    margin-top: 98px;
+    padding: 21px;
+    height: 243px;
+    z-index: 1;
+    margin-left: 68px;
+    border-radius: 126px;
+}
+
+.cardePosition{
+    margin-top: 118px;
+}
+
+.avis{
+    margin-left: 10%;
+    padding: 12px;
+    width: 80%;
+}
+
+.avis .container .commantaire{
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+
+.avis .container div div p{
+    /* font-size: 12px; */
+    color: #666
+}
+
+
+
+
+.top_commantaire{
+    margin-top: 12px;
+}
+.similairesCategorie{
+    background: #242736;
+}
+
+.Commente_left{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 5px;
+}
+.Commente_left_P{
+    font-size: 13px;
+    color: #666;
+}
+
+.commenter_icon{
+    color: #242736;
+    font-size: 34px;
+    text-align: center;
+}
+
+.Commente_rigth{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 13px;
+}
+.ttr{
+    font-size: 13px;
+    color: #666
+}
+
+.top_commantaires{
+    padding: 12px;
+    width: 71%;
+}
+.Commente_left p{
+    font-size: 13px;
+    color: #666;
+}
+.commantaires img{
+    width: 96px;
+    margin-left: 20px
+}
+.commantaires{
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 14px;
+}
+
+@media (max-width: 768px) {
+    .tt .profile {
+        border-radius: 126px;
+        margin: 0;
+        margin-top: 0;
+        padding: 0;
+        z-index: 1;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .navs-mobile a {
+        display: block;
+        padding: 11px 6px;
+        line-height: 26px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .video-rotation div {
+        background: #242736;
+        width: 92px;
+        height: 31px;
+    }
+    .video-rotation div ul li {
+        font-size: 6px;
+        color: white;
+        margin: 1px;
+        padding: 7px;
+    }
+    .tdr div {
+        margin-top: 21px;
+        margin-left: 8px;
+    }
+    .ttt-fond {
+        background:no-repeat center bottom;
+        background-position: bottom;
+        background-size: 7rem;
+    }
+    .tt .profile {
+        display: none;
+    }
+    .tt {
+        margin-top: -90px;
+    }
+    .hero_home_tendance.version_3 {
+        /* background: #3f4079 url(../img/99.png) no-repeat center bottom; */
+        height: 147px;
+    }
+    .tdr ul i {
+        width: 26px;
+        color: #4aafa2;
+        font-size: 16px;
+    }
+    .tdr h1 {
+        font-size: 9px;
+        color: white;
+    }
+    .video-rotation h1 {
+        font-size: 88%;
+        color: #4aafa2;
+    }
+    .mb-4, .my-4 {
+        margin-bottom: -0.5rem !important;
+    }
+}
+
+@media (max-width: 325px) {
+   .ttr{
+        font-size: 9px;
+   } 
+   .ttri{
+    font-size: 30px;
+    margin-left: -4px;
+   }
+}
