@@ -1,20 +1,24 @@
 import React from 'react'
 
+// Style
+import {Wrapper, Context} from './Menu.style'
+
+
 const Menu = () => {
     return (
-        <div className="container-fluid navBart">
-            <div className="container">
-                <ul class="v-effect-link">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Tendance</a></li>
-                <li><a href="#">Acteurs</a></li>
-                <li><a href="#">Télé </a></li>
-                <li><a href="#">Musiciens</a></li>
-                <li><a href="#">Comediens</a></li>
-                <li><a href="#">Toutes les catégories</a></li>
+        <Wrapper className="container-fluid" >
+            <Context className="container">
+                <ul>
+                    <li>Accueil <strong>|</strong> </li>
+                    <li>Tendance</li>
+                    <li>Acteurs</li>
+                    <li>Télé</li>
+                    <li>Musiciens</li>
+                    <li>Comédiens</li>
+                    <li>Toutes les catégories</li>
                 </ul>
-            </div>
-        </div>
+            </Context>
+        </Wrapper>
     )
 }
 
